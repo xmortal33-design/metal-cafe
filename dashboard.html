@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metal Cafe Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Metal Cafe Admin Dashboard</h1>
+    <button onclick="logout()">Logout</button>
+</header>
+
+<div class="stats">
+
+    <div class="stat-box">
+        <h2 id="totalProducts">0</h2>
+        <p>Total Products</p>
+    </div>
+
+    <div class="stat-box">
+        <h2 id="totalOrders">0</h2>
+        <p>Total Orders</p>
+    </div>
+
+</div>
+
+<div class="dashboard">
+
+    <div class="card">
+        <h2>Manage Products</h2>
+        <button onclick="window.location.href='products.html'">
+            Open Products
+        </button>
+    </div>
+
+    <div class="card">
+        <h2>Customer Orders</h2>
+        <button onclick="window.location.href='orders.html'">
+            View Orders
+        </button>
+    </div>
+
+    <div class="card">
+        <h2>Total Sales</h2>
+        <h1 id="totalSales">Rs.0</h1>
+    </div>
+
+</div>
+
+<div class="admin-actions">
+
+    <button onclick="window.location.href='products.html'">
+        Manage Products
+    </button>
+
+    <button onclick="window.location.href='orders.html'">
+        View Orders
+    </button>
+
+    <button onclick="window.location.href='index.html'">
+        Open Website
+    </button>
+
+</div>
+
+<div class="recent-section">
+    <h2>Recent Orders</h2>
+    <div id="recentOrders">
+        No Orders Yet
+    </div>
+</div>
+
+<div class="recent-section">
+    <h2>Recent Products</h2>
+    <div id="recentProducts">
+        No Products Yet
+    </div>
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>

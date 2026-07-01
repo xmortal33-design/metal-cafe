@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Metal Cafe Cart</title>
+
+<link rel="stylesheet" href="cart.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🛒 Metal Cafe Cart</h1>
+
+<a href="index.html">
+
+<button>⬅ Back To Menu</button>
+
+</a>
+
+</header>
+
+<section class="cart-container">
+
+<div class="cart-left">
+
+<h2>Your Order</h2>
+
+<div id="cart-items">
+
+<p>Your cart is empty.</p>
+
+</div>
+
+</div>
+
+<div class="cart-right">
+
+<h2>Bill Summary</h2>
+
+<p>Subtotal :
+<span id="subtotal">Rs.0</span>
+</p>
+
+<p>Delivery :
+<span>Rs.150</span>
+</p>
+
+<hr>
+
+<h2>
+
+Grand Total
+
+<span id="grandtotal">
+
+Rs.150
+
+</span>
+
+</h2>
+
+<button id="continuePaymentBtn">
+    Continue To Payment
+</button>
+
+</div>
+
+</section>
+
+<section id="checkout">
+
+<h2>Checkout</h2>
+
+<form id="checkoutForm">
+
+<label>Full Name</label>
+<input type="text" id="customerName" placeholder="Enter Your Name" required>
+
+<label>Phone Number</label>
+<input type="tel" id="customerPhone" placeholder="03XXXXXXXXX" required>
+
+<label>Delivery Address</label>
+<textarea id="customerAddress" placeholder="Enter Complete Address" required></textarea>
+
+<h3>Select Payment Method</h3>
+
+<label>
+<input type="radio" name="payment" value="Cash On Delivery" checked>
+Cash On Delivery
+</label>
+
+<label>
+<input type="radio" name="payment" value="JazzCash">
+JazzCash
+</label>
+
+<label>
+<input type="radio" name="payment" value="EasyPaisa">
+EasyPaisa
+</label>
+
+<label>
+<input type="radio" name="payment" value="Bank Transfer">
+Bank Transfer
+</label>
+
+<button type="submit">
+Place Order
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<h3>Metal Cafe</h3>
+
+<p>📍 Kohat, Khyber Pakhtunkhwa</p>
+
+<p>📞 03355496308</p>
+
+<p>© 2026 Metal Cafe</p>
+
+</footer>
+
+<script src="cart.js"></script>
+
+</body>
+
+</html>

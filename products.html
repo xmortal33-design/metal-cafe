@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Manage Products</title>
+
+<link rel="stylesheet" href="products.css">
+
+</head>
+
+<body>
+
+<h1>Manage Products</h1>
+
+<button id="addProduct">
+    
+    <div id="productForm" style="display:none;">
+
+<input type="text" id="productName" placeholder="Product Name">
+
+<input type="text" id="productPrice" placeholder="Product Price">
+
+<input type="text" id="productImage" placeholder="Image Name (example: pizza1.jpg)">
+
+<button onclick="saveProduct()">
+
+Save Product
+
+</button>
+
+</div>
+
+➕ Add Product
+
+</button>
+
+<div id="productsList">
+
+</div>
+
+<script src="products.js"></script>
+
+</body>
+
+</html>
